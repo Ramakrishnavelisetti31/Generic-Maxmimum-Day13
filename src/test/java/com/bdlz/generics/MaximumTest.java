@@ -6,20 +6,20 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 public class MaximumTest {
     @Test
-    public void integerMax_AtFirstPosition() {
-        float actualResult = Maximum.findMaximum(9.657f,3.257f,7.123f);
-        Assert.assertEquals(9.657f,actualResult,0.0);
+    public void stringMax_AtFirstPosition() {
+        String actualResult = Maximum.findMaximum("Peach","Apple","Banana");
+        Assert.assertEquals("Peach",actualResult);
     }
 
     @Test
-    public void integerMax_AtSecondPosition() {
-        float actualResult = Maximum.findMaximum(3.257f, 9.657f,7.123f);
-        Assert.assertEquals(9.657f,actualResult,0.0);
+    public void stringMax_AtSecondPosition() {
+        String actualResult = Maximum.findMaximum("Apple","Peach","Banana");
+        Assert.assertEquals("Peach",actualResult);
     }
 
     @Test
-    public void integerMax_AtThirdPosition() {
-        float actualResult = Maximum.findMaximum(7.123f, 3.257f,9.657f);
-        Assert.assertEquals(9.657f,actualResult,0.0);
+    public void floatMax_AtThirdPosition() {
+        String actualResult = Maximum.findMaximum("Apple","Banana","Peach");
+        Assert.assertEquals("Peach",actualResult);
     }
 }
