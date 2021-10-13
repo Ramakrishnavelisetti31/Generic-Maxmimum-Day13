@@ -7,19 +7,19 @@ import static org.junit.Assert.*;
 public class MaximumTest {
     @Test
     public void integerMax_AtFirstPosition() {
-        int actualResult = Maximum.findMaximum(9,3,7);
-        Assert.assertEquals(9,actualResult);
+        float actualResult = Maximum.findMaximum(9.657f,3.257f,7.123f);
+        Assert.assertEquals(9.657f,actualResult,0.0);
     }
 
     @Test
     public void integerMax_AtSecondPosition() {
-        int actualResult = Maximum.findMaximum(3, 9,7);
-        Assert.assertEquals(9,actualResult);
+        float actualResult = Maximum.findMaximum(3.257f, 9.657f,7.123f);
+        Assert.assertEquals(9.657f,actualResult,0.0);
     }
 
     @Test
     public void integerMax_AtThirdPosition() {
-        int actualResult = Maximum.findMaximum(3, 7,9);
-        Assert.assertEquals(9,actualResult);
+        float actualResult = Maximum.findMaximum(7.123f, 3.257f,9.657f);
+        Assert.assertEquals(9.657f,actualResult,0.0);
     }
 }
