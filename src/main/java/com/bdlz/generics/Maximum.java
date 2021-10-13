@@ -9,12 +9,10 @@ public class Maximum {
         } if (c.compareTo(max) > 0) {
             max = c;
         }
-        System.out.println(max);
         return max;
     }
 
     public static void main(String[] args) {
         System.out.println("Welcome Generics Maximum program");
-        Maximum.findMaximum(9,4,6);
     }
 }
